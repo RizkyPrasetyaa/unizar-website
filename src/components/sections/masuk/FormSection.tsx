@@ -2,21 +2,117 @@
 // Originally from 'p-masuk' page. Edit this file to change this section.
 export function FormSection() {
   return (
-    <section className="sec" id="masuk--form" data-t="Masuk"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">Akun</span><h2>Pilih jenis akun</h2></div></div>
-<div className="split"><div className="card" data-tabs style={{'maxWidth': '520px'}}>
-<div className="tabs-l" role="tablist" aria-label="Jenis akun"><button type="button" role="tab" aria-selected="true">Sivitas (SSO)</button><button type="button" role="tab" aria-selected="false">Asesor / mitra</button></div>
-<form role="tabpanel" data-login style={{'display': 'grid', 'gap': '14px', 'marginTop': '14px'}}>
-<div className="field"><label htmlFor="l-id">Email UNIZAR / NIDN / NIM</label><input id="l-id" autoComplete="username" placeholder="nama@unizar.ac.id" /></div>
-<div className="field"><label htmlFor="l-pw">Kata sandi</label><input id="l-pw" type="password" autoComplete="current-password" /></div>
-<div className="field"><label htmlFor="l-role">Masuk sebagai (simulasi peran)</label><select id="l-role" name="role"><option value="mhs">Mahasiswa</option><option value="dsn">Dosen / tendik</option><option value="op-kmhs">Operator Biro Kemahasiswaan</option><option value="unit">Operator unit kerja / pemilik risiko</option><option value="renbang">Koordinator kinerja & risiko (WR IV / Biro Perencanaan)</option><option value="spi">Satuan Pengawasan Internal</option><option value="mutu">Tim mutu internal</option></select></div>
-<div className="field" data-unit-f hidden><label htmlFor="l-unit">Unit kerja</label><select id="l-unit" name="unit"><option value="REK">REK · Pimpinan Universitas (Rektor dan Wakil Rektor I-IV)</option><option value="BAK" selected>BAK · Biro Akademik</option><option value="BKM">BKM · Biro Kemahasiswaan</option><option value="BKU">BKU · Biro Keuangan</option><option value="SDM">SDM · Biro Sumber Daya Manusia</option><option value="BUM">BUM · Biro Umum</option><option value="LPPM">LPPM · Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM)</option><option value="HKA">HKA · Biro Humas, Kerjasama dan Alumni (HKA)</option><option value="RSB">RSB · Biro Perencanaan dan Pengembangan Institusi</option><option value="TI">TI · Bagian Teknologi Informasi</option><option value="HUK">HUK · Biro Hukum dan Administrasi Umum</option><option value="BPM">BPM · Badan Penjaminan Mutu (BPM)</option><option value="SPI">SPI · Satuan Pengawas Internal (SPI)</option><option value="ETIK">ETIK · Dewan Etik dan Satgas PPKPT</option><option value="SAU">SAU · Senat Akademik Universitas (SAU)</option><option value="DEWPEN">DEWPEN · Dewan Penasehat</option><option value="UPTPUS">UPTPUS · Unit Pelaksana Teknis Perpustakaan</option><option value="UPTBIS">UPTBIS · UPT Inkubator Bisnis Teknologi dan Unit Bisnis</option><option value="UPTBHS">UPTBHS · UPT Pusat Bahasa (UNIZAR Learning Center)</option><option value="UPTK3">UPTK3 · UPT Keselamatan dan Kesehatan Kerja (K3)</option><option value="FAK">FAK · Fakultas (template generik)</option><option value="PPS">PPS · Program Pascasarjana (template generik)</option><option value="PRODI">PRODI · Program Studi (template generik)</option></select></div>
-<button className="btn dark" type="submit" style={{'justifyContent': 'center'}}>Masuk</button><a href="#" data-open="form:reset-sso" style={{'fontSize': '14px', 'fontWeight': '700'}}>Lupa kata sandi atau belum punya akun?</a></form>
-<form role="tabpanel" hidden data-login="asesor" style={{'display': 'grid', 'gap': '14px', 'marginTop': '14px'}}>
-<div className="field"><label htmlFor="a-id">ID asesor</label><input id="a-id" autoComplete="username" /></div>
-<div className="field"><label htmlFor="a-pw">Kode akses</label><input id="a-pw" type="password" autoComplete="current-password" /></div>
-<button className="btn dark" type="submit" style={{'justifyContent': 'center'}}>Masuk sebagai asesor</button><span className="form-msg" aria-live="polite"></span>
-<p className="note">Akun asesor hanya-baca, berlaku selama masa asesmen, dan langsung membuka Peta Bukti. Setiap unduhan tercatat.</p></form></div>
-<div className="card flat"><h3>Yang terbuka setelah masuk</h3><ul style={{'margin': '0', 'paddingLeft': '18px', 'color': 'var(--muted)'}}><li>Dokumen bertanda gembok di Pusdatin</li><li>Laporan audit, RTM, dan RTL</li><li>Layanan akademik, keuangan, dan kepegawaian</li><li>Kolom status kelengkapan bukti (tim internal)</li></ul></div></div></div></section>
+    <section className="sec" id="masuk--form" data-t="Masuk">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">Akun</span>
+            <h2>Pilih jenis akun</h2>
+          </div>
+        </div>
+        <div className="split">
+          <div className="card" data-tabs style={{ maxWidth: "520px" }}>
+            <div className="tabs-l" role="tablist" aria-label="Jenis akun">
+              <button type="button" role="tab" aria-selected="true">
+                Sivitas (SSO)
+              </button>
+              <button type="button" role="tab" aria-selected="false">
+                Asesor / mitra
+              </button>
+            </div>
+            <form role="tabpanel" data-login style={{ display: "grid", gap: "14px", marginTop: "14px" }}>
+              <div className="field">
+                <label htmlFor="l-id">Email UNIZAR / NIDN / NIM</label>
+                <input id="l-id" autoComplete="username" placeholder="nama@unizar.ac.id" />
+              </div>
+              <div className="field">
+                <label htmlFor="l-pw">Kata sandi</label>
+                <input id="l-pw" type="password" autoComplete="current-password" />
+              </div>
+              <div className="field">
+                <label htmlFor="l-role">Masuk sebagai (simulasi peran)</label>
+                <select id="l-role" name="role">
+                  <option value="mhs">Mahasiswa</option>
+                  <option value="dsn">Dosen / tendik</option>
+                  <option value="op-kmhs">Operator Biro Kemahasiswaan</option>
+                  <option value="unit">Operator unit kerja / pemilik risiko</option>
+                  <option value="renbang">Koordinator kinerja & risiko (WR IV / Biro Perencanaan)</option>
+                  <option value="spi">Satuan Pengawasan Internal</option>
+                  <option value="mutu">Tim mutu internal</option>
+                </select>
+              </div>
+              <div className="field" data-unit-f hidden>
+                <label htmlFor="l-unit">Unit kerja</label>
+                <select id="l-unit" name="unit">
+                  <option value="REK">REK · Pimpinan Universitas (Rektor dan Wakil Rektor I-IV)</option>
+                  <option value="BAK" selected>
+                    BAK · Biro Akademik
+                  </option>
+                  <option value="BKM">BKM · Biro Kemahasiswaan</option>
+                  <option value="BKU">BKU · Biro Keuangan</option>
+                  <option value="SDM">SDM · Biro Sumber Daya Manusia</option>
+                  <option value="BUM">BUM · Biro Umum</option>
+                  <option value="LPPM">LPPM · Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM)</option>
+                  <option value="HKA">HKA · Biro Humas, Kerjasama dan Alumni (HKA)</option>
+                  <option value="RSB">RSB · Biro Perencanaan dan Pengembangan Institusi</option>
+                  <option value="TI">TI · Bagian Teknologi Informasi</option>
+                  <option value="HUK">HUK · Biro Hukum dan Administrasi Umum</option>
+                  <option value="BPM">BPM · Badan Penjaminan Mutu (BPM)</option>
+                  <option value="SPI">SPI · Satuan Pengawas Internal (SPI)</option>
+                  <option value="ETIK">ETIK · Dewan Etik dan Satgas PPKPT</option>
+                  <option value="SAU">SAU · Senat Akademik Universitas (SAU)</option>
+                  <option value="DEWPEN">DEWPEN · Dewan Penasehat</option>
+                  <option value="UPTPUS">UPTPUS · Unit Pelaksana Teknis Perpustakaan</option>
+                  <option value="UPTBIS">UPTBIS · UPT Inkubator Bisnis Teknologi dan Unit Bisnis</option>
+                  <option value="UPTBHS">UPTBHS · UPT Pusat Bahasa (UNIZAR Learning Center)</option>
+                  <option value="UPTK3">UPTK3 · UPT Keselamatan dan Kesehatan Kerja (K3)</option>
+                  <option value="FAK">FAK · Fakultas (template generik)</option>
+                  <option value="PPS">PPS · Program Pascasarjana (template generik)</option>
+                  <option value="PRODI">PRODI · Program Studi (template generik)</option>
+                </select>
+              </div>
+              <button className="btn dark" type="submit" style={{ justifyContent: "center" }}>
+                Masuk
+              </button>
+              <a href="#" data-open="form:reset-sso" style={{ fontSize: "14px", fontWeight: "700" }}>
+                Lupa kata sandi atau belum punya akun?
+              </a>
+            </form>
+            <form
+              role="tabpanel"
+              hidden
+              data-login="asesor"
+              style={{ display: "grid", gap: "14px", marginTop: "14px" }}
+            >
+              <div className="field">
+                <label htmlFor="a-id">ID asesor</label>
+                <input id="a-id" autoComplete="username" />
+              </div>
+              <div className="field">
+                <label htmlFor="a-pw">Kode akses</label>
+                <input id="a-pw" type="password" autoComplete="current-password" />
+              </div>
+              <button className="btn dark" type="submit" style={{ justifyContent: "center" }}>
+                Masuk sebagai asesor
+              </button>
+              <span className="form-msg" aria-live="polite"></span>
+              <p className="note">
+                Akun asesor hanya-baca, berlaku selama masa asesmen, dan langsung membuka Peta Bukti. Setiap unduhan
+                tercatat.
+              </p>
+            </form>
+          </div>
+          <div className="card flat">
+            <h3>Yang terbuka setelah masuk</h3>
+            <ul style={{ margin: "0", paddingLeft: "18px", color: "var(--muted)" }}>
+              <li>Dokumen bertanda gembok di Pusdatin</li>
+              <li>Laporan audit, RTM, dan RTL</li>
+              <li>Layanan akademik, keuangan, dan kepegawaian</li>
+              <li>Kolom status kelengkapan bukti (tim internal)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

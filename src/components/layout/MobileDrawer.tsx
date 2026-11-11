@@ -41,13 +41,7 @@ export function MobileDrawer() {
             <img src="/unizar/logo144.png" alt="" style={{ width: "36px" }} />
             UNIZAR
           </a>
-          <button
-            className="icon-btn"
-            type="button"
-            data-close-drawer
-            aria-label="Tutup menu"
-            onClick={close}
-          >
+          <button className="icon-btn" type="button" data-close-drawer aria-label="Tutup menu" onClick={close}>
             <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6 6l12 12M18 6L6 18" />
             </svg>

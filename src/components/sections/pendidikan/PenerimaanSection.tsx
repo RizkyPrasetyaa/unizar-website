@@ -2,13 +2,117 @@
 // Originally from 'p-pendidikan' page. Edit this file to change this section.
 export function PenerimaanSection() {
   return (
-    <section className="sec" id="pendidikan--penerimaan" data-t="Penerimaan & Beasiswa"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">PMB 2027</span><h2>Penerimaan mahasiswa baru</h2><p>Terbuka untuk semua, tanpa membedakan suku, agama, asal daerah, maupun disabilitas.</p></div></div>
-<div className="grid g4" style={{'gridTemplateColumns': 'repeat(auto-fit,minmax(200px,1fr))'}}><a className="card" href="#" data-open="ext:pmb"><span className="pill ">Reguler</span><p>Seleksi tes potensi akademik daring.</p><span className="more">Daftar jalur ini →</span></a><a className="card" href="#" data-open="ext:pmb"><span className="pill gold">Prestasi</span><p>Rapor dan prestasi akademik atau non-akademik.</p><span className="more">Daftar jalur ini →</span></a><a className="card" href="#" data-open="ext:pmb"><span className="pill ">Afirmasi & KIP-Kuliah</span><p>Untuk calon mahasiswa kurang mampu dan daerah 3T.</p><span className="more">Daftar jalur ini →</span></a><a className="card" href="#" data-open="ext:pmb"><span className="pill gold">RPL</span><p>Pengalaman kerja diakui sebagai sks.</p><span className="more">Daftar jalur ini →</span></a><a className="card" href="#" data-open="ext:pmb"><span className="pill ">Pindahan</span><p>Alih kredit dari perguruan tinggi lain.</p><span className="more">Daftar jalur ini →</span></a></div>
-<div className="split" style={{'marginTop': '22px'}}><div className="card"><h3>Beasiswa & keringanan</h3><ul className="clean"><li className="doc"><div><b>KIP-Kuliah</b><small>Pemerintah · biaya pendidikan dan hidup</small></div><a href="#" data-open="doc:kip-kuliah">Lihat dokumen →</a></li><li className="doc"><div><b>Beasiswa afirmasi daerah 3T</b><small>Universitas · potongan UKT</small></div><a href="#" data-open="doc:beasiswa-afirmasi-daerah-3t">Lihat dokumen →</a></li><li className="doc"><div><b>Beasiswa prestasi & tahfidz</b><small>Universitas</small></div><a href="#" data-open="doc:beasiswa-prestasi-tahfidz">Lihat dokumen →</a></li><li className="doc"><div><b>Keringanan UKT</b><small>Bagi mahasiswa terdampak ekonomi</small></div><a href="#" data-open="doc:keringanan-ukt">Lihat dokumen →</a></li></ul></div>
-<div><div className="band"><div><h2>Siap mendaftar?</h2><p>Pendaftaran, pembayaran, dan pengumuman sepenuhnya daring.</p></div><div className="btn-row"><a className="btn pri" href="#" data-open="ext:pmb">Portal PMB <svg className="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg></a><a className="btn ghost" href="#" data-open="detail:simulasi-biaya">Simulasi biaya</a></div></div>
-<details className="faq"><summary>Berapa biaya kuliah per semester?</summary><p>Biaya berbeda per prodi. Gunakan simulasi biaya di portal PMB dan cek peluang beasiswa.</p></details>
-<details className="faq"><summary>Apakah penyandang disabilitas bisa mendaftar?</summary><p>Bisa. Unit layanan disabilitas mendampingi sejak pendaftaran, termasuk akomodasi saat seleksi.</p></details>
-<details className="faq"><summary>Saya sudah bekerja. Bisakah kuliah lebih singkat?</summary><p>Melalui jalur RPL, pengalaman kerja yang relevan dapat diakui sebagai sks.</p></details></div></div></div></section>
+    <section className="sec" id="pendidikan--penerimaan" data-t="Penerimaan & Beasiswa">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">PMB 2027</span>
+            <h2>Penerimaan mahasiswa baru</h2>
+            <p>Terbuka untuk semua, tanpa membedakan suku, agama, asal daerah, maupun disabilitas.</p>
+          </div>
+        </div>
+        <div className="grid g4" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))" }}>
+          <a className="card" href="#" data-open="ext:pmb">
+            <span className="pill ">Reguler</span>
+            <p>Seleksi tes potensi akademik daring.</p>
+            <span className="more">Daftar jalur ini →</span>
+          </a>
+          <a className="card" href="#" data-open="ext:pmb">
+            <span className="pill gold">Prestasi</span>
+            <p>Rapor dan prestasi akademik atau non-akademik.</p>
+            <span className="more">Daftar jalur ini →</span>
+          </a>
+          <a className="card" href="#" data-open="ext:pmb">
+            <span className="pill ">Afirmasi & KIP-Kuliah</span>
+            <p>Untuk calon mahasiswa kurang mampu dan daerah 3T.</p>
+            <span className="more">Daftar jalur ini →</span>
+          </a>
+          <a className="card" href="#" data-open="ext:pmb">
+            <span className="pill gold">RPL</span>
+            <p>Pengalaman kerja diakui sebagai sks.</p>
+            <span className="more">Daftar jalur ini →</span>
+          </a>
+          <a className="card" href="#" data-open="ext:pmb">
+            <span className="pill ">Pindahan</span>
+            <p>Alih kredit dari perguruan tinggi lain.</p>
+            <span className="more">Daftar jalur ini →</span>
+          </a>
+        </div>
+        <div className="split" style={{ marginTop: "22px" }}>
+          <div className="card">
+            <h3>Beasiswa & keringanan</h3>
+            <ul className="clean">
+              <li className="doc">
+                <div>
+                  <b>KIP-Kuliah</b>
+                  <small>Pemerintah · biaya pendidikan dan hidup</small>
+                </div>
+                <a href="#" data-open="doc:kip-kuliah">
+                  Lihat dokumen →
+                </a>
+              </li>
+              <li className="doc">
+                <div>
+                  <b>Beasiswa afirmasi daerah 3T</b>
+                  <small>Universitas · potongan UKT</small>
+                </div>
+                <a href="#" data-open="doc:beasiswa-afirmasi-daerah-3t">
+                  Lihat dokumen →
+                </a>
+              </li>
+              <li className="doc">
+                <div>
+                  <b>Beasiswa prestasi & tahfidz</b>
+                  <small>Universitas</small>
+                </div>
+                <a href="#" data-open="doc:beasiswa-prestasi-tahfidz">
+                  Lihat dokumen →
+                </a>
+              </li>
+              <li className="doc">
+                <div>
+                  <b>Keringanan UKT</b>
+                  <small>Bagi mahasiswa terdampak ekonomi</small>
+                </div>
+                <a href="#" data-open="doc:keringanan-ukt">
+                  Lihat dokumen →
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div className="band">
+              <div>
+                <h2>Siap mendaftar?</h2>
+                <p>Pendaftaran, pembayaran, dan pengumuman sepenuhnya daring.</p>
+              </div>
+              <div className="btn-row">
+                <a className="btn pri" href="#" data-open="ext:pmb">
+                  Portal PMB{" "}
+                  <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+                  </svg>
+                </a>
+                <a className="btn ghost" href="#" data-open="detail:simulasi-biaya">
+                  Simulasi biaya
+                </a>
+              </div>
+            </div>
+            <details className="faq">
+              <summary>Berapa biaya kuliah per semester?</summary>
+              <p>Biaya berbeda per prodi. Gunakan simulasi biaya di portal PMB dan cek peluang beasiswa.</p>
+            </details>
+            <details className="faq">
+              <summary>Apakah penyandang disabilitas bisa mendaftar?</summary>
+              <p>Bisa. Unit layanan disabilitas mendampingi sejak pendaftaran, termasuk akomodasi saat seleksi.</p>
+            </details>
+            <details className="faq">
+              <summary>Saya sudah bekerja. Bisakah kuliah lebih singkat?</summary>
+              <p>Melalui jalur RPL, pengalaman kerja yang relevan dapat diakui sebagai sks.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

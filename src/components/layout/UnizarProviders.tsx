@@ -98,14 +98,12 @@ export function UnizarProviders({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem("unizar-lang");
-      if (stored === "en" || stored === "id" && stored !== lang) {
-         
+      if (stored === "en" || (stored === "id" && stored !== lang)) {
         setLangState(stored as Lang);
       }
     } catch {
       // ignore
     }
-     
   }, []);
 
   // Apply language: swap textContent of [data-en] elements
@@ -119,7 +117,7 @@ export function UnizarProviders({ children }: { children: React.ReactNode }) {
         }
         const idVal = el.getAttribute("data-id");
         const enVal = el.getAttribute("data-en");
-        el.innerHTML = lang === "en" ? enVal ?? idVal ?? "" : idVal ?? "";
+        el.innerHTML = lang === "en" ? (enVal ?? idVal ?? "") : (idVal ?? "");
       });
       const buttons = document.querySelectorAll<HTMLButtonElement>(".lang button");
       buttons.forEach((b) => {
@@ -180,9 +178,7 @@ export function UnizarProviders({ children }: { children: React.ReactNode }) {
         <SearchContext.Provider
           value={{ isOpen: searchOpen, open: () => setSearchOpen(true), close: () => setSearchOpen(false) }}
         >
-          <LangContext.Provider value={{ lang, setLang }}>
-            {children}
-          </LangContext.Provider>
+          <LangContext.Provider value={{ lang, setLang }}>{children}</LangContext.Provider>
         </SearchContext.Provider>
       </DrawerContext.Provider>
     </MegaMenuContext.Provider>

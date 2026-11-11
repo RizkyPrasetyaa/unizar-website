@@ -2,8 +2,108 @@
 // Originally from 'p-tata-kelola' page. Edit this file to change this section.
 export function KebijakanSection() {
   return (
-    <section className="sec" id="tata-kelola--kebijakan" data-t="Kebijakan & Laporan"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">Akuntabilitas</span><h2>Kebijakan & laporan</h2><p>Laporan tahunan dan keuangan teraudit tiga tahun terakhir, beserta hasil survei kepuasan.</p></div></div>
-<div className="grid g3"><div className="card"><span className="eyebrow">Tahun 2025</span><h3>Laporan 2025</h3><a href="#" data-open="doc:laporan-tahunan-2025-ringkasan">Laporan tahunan (ringkasan) →</a><a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2025">Ikhtisar keuangan & opini auditor →</a><a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2025" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Dokumen lengkap</a></div><div className="card"><span className="eyebrow">Tahun 2024</span><h3>Laporan 2024</h3><a href="#" data-open="doc:laporan-tahunan-2024-ringkasan">Laporan tahunan (ringkasan) →</a><a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2024">Ikhtisar keuangan & opini auditor →</a><a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2024" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Dokumen lengkap</a></div><div className="card"><span className="eyebrow">Tahun 2023</span><h3>Laporan 2023</h3><a href="#" data-open="doc:laporan-tahunan-2023-ringkasan">Laporan tahunan (ringkasan) →</a><a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2023">Ikhtisar keuangan & opini auditor →</a><a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2023" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Dokumen lengkap</a></div></div><div className="split" style={{'marginTop': '22px'}}><div className="card"><span className="eyebrow">Survei kepuasan tata kelola</span><h3>Yang kami ubah dari masukan Anda</h3><ul style={{'margin': '0', 'paddingLeft': '18px', 'color': 'var(--muted)'}}><li>[Contoh: layanan surat akademik kini selesai dalam 1 hari kerja]</li><li>[Contoh: ikhtisar keuangan terbit setiap triwulan]</li><li>[Contoh: forum dengar pendapat mahasiswa tiap semester]</li></ul><a className="more" href="#" data-open="form:survei-kepuasan">Isi survei kepuasan →</a></div><div className="card flat"><span className="eyebrow">Kebijakan pengelolaan</span><p>Pedoman pengelolaan di sebelas bidang, pola pengelolaan keuangan, dan renstra keuangan tersedia di Pusdatin.</p><a className="more" href="#pusdatin">Buka Pusdatin →</a></div></div><div className="slim jdih" style={{'marginTop': '22px'}}><div><span className="eyebrow">JDIH UNIZAR</span><p style={{'marginTop': '4px'}}><b style={{'color': 'var(--ink)'}}>Jaringan Dokumentasi dan Informasi Hukum.</b> Statuta, peraturan rektor, keputusan, dan produk hukum lain dikelola di website JDIH.</p></div><a className="btn dark" href="#" data-open="ext:jdih">Buka JDIH UNIZAR <svg className="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" /></svg></a></div></div></section>
+    <section className="sec" id="tata-kelola--kebijakan" data-t="Kebijakan & Laporan">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">Akuntabilitas</span>
+            <h2>Kebijakan & laporan</h2>
+            <p>Laporan tahunan dan keuangan teraudit tiga tahun terakhir, beserta hasil survei kepuasan.</p>
+          </div>
+        </div>
+        <div className="grid g3">
+          <div className="card">
+            <span className="eyebrow">Tahun 2025</span>
+            <h3>Laporan 2025</h3>
+            <a href="#" data-open="doc:laporan-tahunan-2025-ringkasan">
+              Laporan tahunan (ringkasan) →
+            </a>
+            <a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2025">
+              Ikhtisar keuangan & opini auditor →
+            </a>
+            <a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2025" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Dokumen lengkap
+            </a>
+          </div>
+          <div className="card">
+            <span className="eyebrow">Tahun 2024</span>
+            <h3>Laporan 2024</h3>
+            <a href="#" data-open="doc:laporan-tahunan-2024-ringkasan">
+              Laporan tahunan (ringkasan) →
+            </a>
+            <a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2024">
+              Ikhtisar keuangan & opini auditor →
+            </a>
+            <a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2024" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Dokumen lengkap
+            </a>
+          </div>
+          <div className="card">
+            <span className="eyebrow">Tahun 2023</span>
+            <h3>Laporan 2023</h3>
+            <a href="#" data-open="doc:laporan-tahunan-2023-ringkasan">
+              Laporan tahunan (ringkasan) →
+            </a>
+            <a href="#" data-open="doc:ikhtisar-laporan-keuangan-teraudit-2023">
+              Ikhtisar keuangan & opini auditor →
+            </a>
+            <a href="#" data-open="doc:laporan-tahunan-keuangan-lengkap-2023" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Dokumen lengkap
+            </a>
+          </div>
+        </div>
+        <div className="split" style={{ marginTop: "22px" }}>
+          <div className="card">
+            <span className="eyebrow">Survei kepuasan tata kelola</span>
+            <h3>Yang kami ubah dari masukan Anda</h3>
+            <ul style={{ margin: "0", paddingLeft: "18px", color: "var(--muted)" }}>
+              <li>[Contoh: layanan surat akademik kini selesai dalam 1 hari kerja]</li>
+              <li>[Contoh: ikhtisar keuangan terbit setiap triwulan]</li>
+              <li>[Contoh: forum dengar pendapat mahasiswa tiap semester]</li>
+            </ul>
+            <a className="more" href="#" data-open="form:survei-kepuasan">
+              Isi survei kepuasan →
+            </a>
+          </div>
+          <div className="card flat">
+            <span className="eyebrow">Kebijakan pengelolaan</span>
+            <p>
+              Pedoman pengelolaan di sebelas bidang, pola pengelolaan keuangan, dan renstra keuangan tersedia di
+              Pusdatin.
+            </p>
+            <a className="more" href="#pusdatin">
+              Buka Pusdatin →
+            </a>
+          </div>
+        </div>
+        <div className="slim jdih" style={{ marginTop: "22px" }}>
+          <div>
+            <span className="eyebrow">JDIH UNIZAR</span>
+            <p style={{ marginTop: "4px" }}>
+              <b style={{ color: "var(--ink)" }}>Jaringan Dokumentasi dan Informasi Hukum.</b> Statuta, peraturan
+              rektor, keputusan, dan produk hukum lain dikelola di website JDIH.
+            </p>
+          </div>
+          <a className="btn dark" href="#" data-open="ext:jdih">
+            Buka JDIH UNIZAR{" "}
+            <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }

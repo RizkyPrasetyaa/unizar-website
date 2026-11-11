@@ -2,8 +2,53 @@
 // Originally from 'p-penelitian' page. Edit this file to change this section.
 export function PublikasiSection() {
   return (
-    <section className="sec" id="penelitian--publikasi" data-t="Publikasi & Inovasi"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">Luaran</span><h2>Publikasi & inovasi</h2></div></div>
-<div className="grid g3"><a className="card" href="#publikasi-inovasi" data-sec="jurnal"><span className="pill">Jurnal</span><h3>Jurnal UNIZAR</h3><p>Jurnal ilmiah terbitan universitas beserta status akreditasinya.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#publikasi-inovasi" data-sec="repositori"><span className="pill">Akses terbuka</span><h3>Repositori institusi</h3><p>Artikel, skripsi, dan laporan penelitian berlisensi terbuka.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#publikasi-inovasi" data-sec="sinta"><span className="pill">SINTA</span><h3>Profil SINTA</h3><p>Kinerja publikasi dosen dan institusi di SINTA.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#publikasi-inovasi" data-sec="hki"><span className="pill">HKI</span><h3>Kekayaan intelektual</h3><p>Paten, hak cipta, dan desain industri hasil riset.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#publikasi-inovasi" data-sec="kolaborasi"><span className="pill">Kolaborasi</span><h3>Kolaborasi riset</h3><p>Riset bersama mitra dalam dan luar negeri.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#publikasi-inovasi" data-sec="hilirisasi"><span className="pill">Inovasi</span><h3>Produk & hilirisasi</h3><p>Hasil riset yang dimanfaatkan masyarakat dan industri.</p><span className="more">Selengkapnya →</span></a></div></div></section>
+    <section className="sec" id="penelitian--publikasi" data-t="Publikasi & Inovasi">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">Luaran</span>
+            <h2>Publikasi & inovasi</h2>
+          </div>
+        </div>
+        <div className="grid g3">
+          <a className="card" href="#publikasi-inovasi" data-sec="jurnal">
+            <span className="pill">Jurnal</span>
+            <h3>Jurnal UNIZAR</h3>
+            <p>Jurnal ilmiah terbitan universitas beserta status akreditasinya.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+          <a className="card" href="#publikasi-inovasi" data-sec="repositori">
+            <span className="pill">Akses terbuka</span>
+            <h3>Repositori institusi</h3>
+            <p>Artikel, skripsi, dan laporan penelitian berlisensi terbuka.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+          <a className="card" href="#publikasi-inovasi" data-sec="sinta">
+            <span className="pill">SINTA</span>
+            <h3>Profil SINTA</h3>
+            <p>Kinerja publikasi dosen dan institusi di SINTA.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+          <a className="card" href="#publikasi-inovasi" data-sec="hki">
+            <span className="pill">HKI</span>
+            <h3>Kekayaan intelektual</h3>
+            <p>Paten, hak cipta, dan desain industri hasil riset.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+          <a className="card" href="#publikasi-inovasi" data-sec="kolaborasi">
+            <span className="pill">Kolaborasi</span>
+            <h3>Kolaborasi riset</h3>
+            <p>Riset bersama mitra dalam dan luar negeri.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+          <a className="card" href="#publikasi-inovasi" data-sec="hilirisasi">
+            <span className="pill">Inovasi</span>
+            <h3>Produk & hilirisasi</h3>
+            <p>Hasil riset yang dimanfaatkan masyarakat dan industri.</p>
+            <span className="more">Selengkapnya →</span>
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }

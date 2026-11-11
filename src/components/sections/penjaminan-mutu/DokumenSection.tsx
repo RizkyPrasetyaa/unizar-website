@@ -2,8 +2,92 @@
 // Originally from 'p-penjaminan-mutu' page. Edit this file to change this section.
 export function DokumenSection() {
   return (
-    <section className="sec" id="penjaminan-mutu--dokumen" data-t="Dokumen & Audit"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">Dokumen mutu</span><h2>Dokumen SPMI & hasil audit</h2><p>Dokumen inti dapat dibuka oleh sivitas dan asesor setelah masuk. Publik dapat membaca ikhtisarnya.</p></div></div>
-<ul className="clean"><li className="doc"><div><b>Ikhtisar Kebijakan & Standar SPMI</b><small>Ringkasan publik · 4 halaman</small></div><a href="#" data-open="doc:ikhtisar-kebijakan-standar-spmi">Lihat dokumen →</a></li><li className="doc"><div><b>Kebijakan, Manual & Standar SPMI</b><small>SK [nomor] · v4.0</small></div><a href="#" data-open="doc:kebijakan-manual-standar-spmi" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Masuk untuk membuka</a></li><li className="doc"><div><b>Formulir & pendokumentasian</b><small>Template unit kerja</small></div><a href="#" data-open="doc:formulir-pendokumentasian" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Masuk untuk membuka</a></li><li className="doc"><div><b>Laporan Monev & AMI 2025</b><small>Akademik dan non-akademik</small></div><a href="#" data-open="doc:laporan-monev-ami-2025" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Masuk untuk membuka</a></li><li className="doc"><div><b>Laporan RTM & RTL 2025</b><small>Keputusan dan status tindak lanjut</small></div><a href="#" data-open="doc:laporan-rtm-rtl-2025" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Masuk untuk membuka</a></li><li className="doc"><div><b>Pedoman AMI & daftar auditor</b><small>SK penugasan 2026</small></div><a href="#" data-open="doc:pedoman-ami-daftar-auditor" className="lock"><svg className="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg> Masuk untuk membuka</a></li></ul></div></section>
+    <section className="sec" id="penjaminan-mutu--dokumen" data-t="Dokumen & Audit">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">Dokumen mutu</span>
+            <h2>Dokumen SPMI & hasil audit</h2>
+            <p>Dokumen inti dapat dibuka oleh sivitas dan asesor setelah masuk. Publik dapat membaca ikhtisarnya.</p>
+          </div>
+        </div>
+        <ul className="clean">
+          <li className="doc">
+            <div>
+              <b>Ikhtisar Kebijakan & Standar SPMI</b>
+              <small>Ringkasan publik · 4 halaman</small>
+            </div>
+            <a href="#" data-open="doc:ikhtisar-kebijakan-standar-spmi">
+              Lihat dokumen →
+            </a>
+          </li>
+          <li className="doc">
+            <div>
+              <b>Kebijakan, Manual & Standar SPMI</b>
+              <small>SK [nomor] · v4.0</small>
+            </div>
+            <a href="#" data-open="doc:kebijakan-manual-standar-spmi" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Masuk untuk membuka
+            </a>
+          </li>
+          <li className="doc">
+            <div>
+              <b>Formulir & pendokumentasian</b>
+              <small>Template unit kerja</small>
+            </div>
+            <a href="#" data-open="doc:formulir-pendokumentasian" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Masuk untuk membuka
+            </a>
+          </li>
+          <li className="doc">
+            <div>
+              <b>Laporan Monev & AMI 2025</b>
+              <small>Akademik dan non-akademik</small>
+            </div>
+            <a href="#" data-open="doc:laporan-monev-ami-2025" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Masuk untuk membuka
+            </a>
+          </li>
+          <li className="doc">
+            <div>
+              <b>Laporan RTM & RTL 2025</b>
+              <small>Keputusan dan status tindak lanjut</small>
+            </div>
+            <a href="#" data-open="doc:laporan-rtm-rtl-2025" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Masuk untuk membuka
+            </a>
+          </li>
+          <li className="doc">
+            <div>
+              <b>Pedoman AMI & daftar auditor</b>
+              <small>SK penugasan 2026</small>
+            </div>
+            <a href="#" data-open="doc:pedoman-ami-daftar-auditor" className="lock">
+              <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V8a4 4 0 0 1 8 0v3" />
+              </svg>{" "}
+              Masuk untuk membuka
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }

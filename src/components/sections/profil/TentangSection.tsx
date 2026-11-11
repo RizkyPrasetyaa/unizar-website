@@ -2,22 +2,170 @@
 // Originally from 'p-profil' page. Edit this file to change this section.
 export function TentangSection() {
   return (
-    <section className="sec" id="profil--tentang" data-t="Tentang UNIZAR"><div className="wrap">
-<div className="sec-h"><div><span className="eyebrow">Sambutan Rektor</span><h2>Selamat datang di Universitas Islam Al-Azhar</h2></div></div>
-<div className="split"><div style={{'display': 'grid', 'gap': '16px', 'fontSize': '17px', 'maxWidth': '66ch'}}>
-<p><i>Assalamu'alaikum warahmatullahi wabarakatuh.</i></p>
-<p>Empat puluh lima tahun lalu, UNIZAR lahir dari satu kegelisahan: anak-anak muda Nusa Tenggara Barat harus pergi jauh untuk kuliah. Para pendiri memilih membangun kampus di sini, di tanah sendiri.</p>
-<p>Semangat itu yang kami jaga sampai hari ini. Kami ingin setiap lulusan UNIZAR menguasai ilmunya, jujur dalam bekerja, dan pulang membawa manfaat bagi kampung halamannya. Itulah makna <i>rahmatan lil 'alamin</i> bagi kami.</p>
-<p>Melalui website ini, kami membuka diri seluas-luasnya: program studi, riset, layanan, laporan, dan dokumen tata kelola. Silakan menjelajah, dan sampaikan masukan Anda kepada kami.</p>
-<p><b>[Nama dan gelar Rektor]</b><br /><span className="muted">Rektor Universitas Islam Al-Azhar</span></p></div>
-<div style={{'display': 'grid', 'gap': '16px', 'alignContent': 'start'}}><div className="ph " data-cap="Foto: potret Rektor" role="img" aria-label="Tempat foto: potret Rektor" style={{'height': '340px'}}></div></div></div>
-<div className="vm">
-<div className="vm-visi"><span className="eyebrow">Visi</span><p>[Visi resmi UNIZAR sesuai Statuta dan RIP]</p></div>
-<div data-tabs className="vm-tabs"><div className="tabs-l" role="tablist" aria-label="Misi, tujuan, sasaran, dan strategi"><button type="button" role="tab" aria-selected="true">Misi</button><button type="button" role="tab" aria-selected="false">Tujuan</button><button type="button" role="tab" aria-selected="false">Sasaran</button><button type="button" role="tab" aria-selected="false">Strategi pencapaian</button></div>
-<div role="tabpanel"><ol className="vm-list"><li>[Misi pendidikan dan pengajaran]</li><li>[Misi penelitian dan inovasi]</li><li>[Misi pengabdian kepada masyarakat]</li><li>[Misi tata kelola dan kerja sama]</li></ol></div>
-<div role="tabpanel" hidden><ol className="vm-list"><li>[Tujuan 1: lulusan yang kompeten, beriman, dan berakhlak]</li><li>[Tujuan 2: riset dan inovasi yang bermanfaat]</li><li>[Tujuan 3: pengabdian yang memberdayakan masyarakat NTB]</li><li>[Tujuan 4: tata kelola yang baik dan kemitraan yang luas]</li></ol></div>
-<div role="tabpanel" hidden><p className="muted" style={{'marginBottom': '12px'}}>Sasaran strategis Renstra UNIZAR 2026–2027 (SK Rektor No. 076B/SK/REK/UNIZAR-012/III/2026).</p><ol className="vm-sas"><li><span className="vm-n">1</span><div><b>Tercapainya mutu pembelajaran dan lulusan yang memiliki kompetensi tinggi, beriman, berakhlak, dan inovatif</b><small>Learning & Growth</small></div></li><li><span className="vm-n">2</span><div><b>Tercapainya mutu kemahasiswaan</b><small>Learning & Growth</small></div></li><li><span className="vm-n">3</span><div><b>Tercapainya peningkatan kapasitas dan kapabilitas sumber daya manusia</b><small>Learning & Growth</small></div></li><li><span className="vm-n">4</span><div><b>Tercapainya mutu sarana prasarana dan peningkatan pendapatan serta sistem keuangan yang akuntabel</b><small>Internal Business Process, Learning & Growth</small></div></li><li><span className="vm-n">5</span><div><b>Tercapainya mutu penelitian, publikasi ilmiah, dan pengabdian kepada masyarakat (PkM) yang berbasis riset dan inovasi</b><small>Learning & Growth</small></div></li><li><span className="vm-n">6</span><div><b>Tercapainya peningkatan kerja sama dalam dan luar negeri</b><small>Internal Business Process</small></div></li><li><span className="vm-n">7</span><div><b>Tercapainya peningkatan mutu tata kelola (good governance) kelembagaan dalam sistem manajemen</b><small>Internal Business Process</small></div></li></ol></div>
-<div role="tabpanel" hidden><div className="vm-str"><div><span className="eyebrow">Jangka panjang · 25 tahun</span><b>Rencana Induk Pengembangan 2025–2045</b><p>[Tahapan besar menuju visi: penguatan mutu, daya saing, dan rekognisi internasional.]</p></div><div><span className="eyebrow">Jangka menengah · 5 tahun</span><b>Rencana Strategis</b><p>[Strategi per sasaran strategis beserta indikator kinerja dan targetnya.]</p></div><div><span className="eyebrow">Jangka pendek · 1 tahun</span><b>Rencana Kerja & Anggaran Tahunan</b><p>[Program kerja unit yang diturunkan dari Renstra dan dipantau tiap triwulan.]</p></div></div></div>
-</div></div></div></section>
+    <section className="sec" id="profil--tentang" data-t="Tentang UNIZAR">
+      <div className="wrap">
+        <div className="sec-h">
+          <div>
+            <span className="eyebrow">Sambutan Rektor</span>
+            <h2>Selamat datang di Universitas Islam Al-Azhar</h2>
+          </div>
+        </div>
+        <div className="split">
+          <div style={{ display: "grid", gap: "16px", fontSize: "17px", maxWidth: "66ch" }}>
+            <p>
+              <i>Assalamu'alaikum warahmatullahi wabarakatuh.</i>
+            </p>
+            <p>
+              Empat puluh lima tahun lalu, UNIZAR lahir dari satu kegelisahan: anak-anak muda Nusa Tenggara Barat harus
+              pergi jauh untuk kuliah. Para pendiri memilih membangun kampus di sini, di tanah sendiri.
+            </p>
+            <p>
+              Semangat itu yang kami jaga sampai hari ini. Kami ingin setiap lulusan UNIZAR menguasai ilmunya, jujur
+              dalam bekerja, dan pulang membawa manfaat bagi kampung halamannya. Itulah makna{" "}
+              <i>rahmatan lil 'alamin</i> bagi kami.
+            </p>
+            <p>
+              Melalui website ini, kami membuka diri seluas-luasnya: program studi, riset, layanan, laporan, dan dokumen
+              tata kelola. Silakan menjelajah, dan sampaikan masukan Anda kepada kami.
+            </p>
+            <p>
+              <b>[Nama dan gelar Rektor]</b>
+              <br />
+              <span className="muted">Rektor Universitas Islam Al-Azhar</span>
+            </p>
+          </div>
+          <div style={{ display: "grid", gap: "16px", alignContent: "start" }}>
+            <div
+              className="ph "
+              data-cap="Foto: potret Rektor"
+              role="img"
+              aria-label="Tempat foto: potret Rektor"
+              style={{ height: "340px" }}
+            ></div>
+          </div>
+        </div>
+        <div className="vm">
+          <div className="vm-visi">
+            <span className="eyebrow">Visi</span>
+            <p>[Visi resmi UNIZAR sesuai Statuta dan RIP]</p>
+          </div>
+          <div data-tabs className="vm-tabs">
+            <div className="tabs-l" role="tablist" aria-label="Misi, tujuan, sasaran, dan strategi">
+              <button type="button" role="tab" aria-selected="true">
+                Misi
+              </button>
+              <button type="button" role="tab" aria-selected="false">
+                Tujuan
+              </button>
+              <button type="button" role="tab" aria-selected="false">
+                Sasaran
+              </button>
+              <button type="button" role="tab" aria-selected="false">
+                Strategi pencapaian
+              </button>
+            </div>
+            <div role="tabpanel">
+              <ol className="vm-list">
+                <li>[Misi pendidikan dan pengajaran]</li>
+                <li>[Misi penelitian dan inovasi]</li>
+                <li>[Misi pengabdian kepada masyarakat]</li>
+                <li>[Misi tata kelola dan kerja sama]</li>
+              </ol>
+            </div>
+            <div role="tabpanel" hidden>
+              <ol className="vm-list">
+                <li>[Tujuan 1: lulusan yang kompeten, beriman, dan berakhlak]</li>
+                <li>[Tujuan 2: riset dan inovasi yang bermanfaat]</li>
+                <li>[Tujuan 3: pengabdian yang memberdayakan masyarakat NTB]</li>
+                <li>[Tujuan 4: tata kelola yang baik dan kemitraan yang luas]</li>
+              </ol>
+            </div>
+            <div role="tabpanel" hidden>
+              <p className="muted" style={{ marginBottom: "12px" }}>
+                Sasaran strategis Renstra UNIZAR 2026–2027 (SK Rektor No. 076B/SK/REK/UNIZAR-012/III/2026).
+              </p>
+              <ol className="vm-sas">
+                <li>
+                  <span className="vm-n">1</span>
+                  <div>
+                    <b>
+                      Tercapainya mutu pembelajaran dan lulusan yang memiliki kompetensi tinggi, beriman, berakhlak, dan
+                      inovatif
+                    </b>
+                    <small>Learning & Growth</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">2</span>
+                  <div>
+                    <b>Tercapainya mutu kemahasiswaan</b>
+                    <small>Learning & Growth</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">3</span>
+                  <div>
+                    <b>Tercapainya peningkatan kapasitas dan kapabilitas sumber daya manusia</b>
+                    <small>Learning & Growth</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">4</span>
+                  <div>
+                    <b>
+                      Tercapainya mutu sarana prasarana dan peningkatan pendapatan serta sistem keuangan yang akuntabel
+                    </b>
+                    <small>Internal Business Process, Learning & Growth</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">5</span>
+                  <div>
+                    <b>
+                      Tercapainya mutu penelitian, publikasi ilmiah, dan pengabdian kepada masyarakat (PkM) yang
+                      berbasis riset dan inovasi
+                    </b>
+                    <small>Learning & Growth</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">6</span>
+                  <div>
+                    <b>Tercapainya peningkatan kerja sama dalam dan luar negeri</b>
+                    <small>Internal Business Process</small>
+                  </div>
+                </li>
+                <li>
+                  <span className="vm-n">7</span>
+                  <div>
+                    <b>Tercapainya peningkatan mutu tata kelola (good governance) kelembagaan dalam sistem manajemen</b>
+                    <small>Internal Business Process</small>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div role="tabpanel" hidden>
+              <div className="vm-str">
+                <div>
+                  <span className="eyebrow">Jangka panjang · 25 tahun</span>
+                  <b>Rencana Induk Pengembangan 2025–2045</b>
+                  <p>[Tahapan besar menuju visi: penguatan mutu, daya saing, dan rekognisi internasional.]</p>
+                </div>
+                <div>
+                  <span className="eyebrow">Jangka menengah · 5 tahun</span>
+                  <b>Rencana Strategis</b>
+                  <p>[Strategi per sasaran strategis beserta indikator kinerja dan targetnya.]</p>
+                </div>
+                <div>
+                  <span className="eyebrow">Jangka pendek · 1 tahun</span>
+                  <b>Rencana Kerja & Anggaran Tahunan</b>
+                  <p>[Program kerja unit yang diturunkan dari Renstra dan dipantau tiap triwulan.]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -38,15 +38,12 @@ export function SearchOverlay() {
       const t = setTimeout(() => inputRef.current?.focus(), 50);
       return () => clearTimeout(t);
     }
-     
   }, [isOpen]);
 
   const results = useMemo(() => {
     const q = norm(query.trim());
     if (!q) return IDX.filter((r) => r.pop);
-    return IDX.filter((r) =>
-      norm(r.t + " " + (r.k || "")).includes(q),
-    ).slice(0, 14);
+    return IDX.filter((r) => norm(r.t + " " + (r.k || "")).includes(q)).slice(0, 14);
   }, [query]);
 
   if (!isOpen) return null;
@@ -79,13 +76,7 @@ export function SearchOverlay() {
             onChange={(e) => setQuery(e.target.value)}
             ref={inputRef}
           />
-          <button
-            className="icon-btn"
-            type="button"
-            data-close-search
-            aria-label="Tutup pencarian"
-            onClick={close}
-          >
+          <button className="icon-btn" type="button" data-close-search aria-label="Tutup pencarian" onClick={close}>
             <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6 6l12 12M18 6L6 18" />
             </svg>
@@ -95,8 +86,7 @@ export function SearchOverlay() {
           {results.length === 0 ? (
             <li className="hint">
               Tidak ada hasil untuk &ldquo;{query.replace(/</g, "&lt;")}
-              &rdquo;. Coba kata lain, misalnya &ldquo;beasiswa&rdquo;,
-              &ldquo;SPMI&rdquo;, atau &ldquo;Ind. 28&rdquo;.
+              &rdquo;. Coba kata lain, misalnya &ldquo;beasiswa&rdquo;, &ldquo;SPMI&rdquo;, atau &ldquo;Ind. 28&rdquo;.
             </li>
           ) : (
             results.map((r, i) => (

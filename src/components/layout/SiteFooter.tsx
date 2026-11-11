@@ -17,9 +17,7 @@ export function SiteFooter() {
               <br />
               (0370) 6175555 · humas@unizar.ac.id
             </p>
-            <p style={{ fontSize: "13px", marginTop: "10px" }}>
-              Instagram · YouTube · Facebook · TikTok
-            </p>
+            <p style={{ fontSize: "13px", marginTop: "10px" }}>Instagram · YouTube · Facebook · TikTok</p>
           </div>
           <div>
             <h4 data-en="University">Universitas</h4>
@@ -68,27 +66,15 @@ export function SiteFooter() {
               Kebijakan privasi
             </a>{" "}
             ·{" "}
-            <a
-              href="#"
-              data-open="detail:sangkalan"
-              style={{ display: "inline" }}
-            >
+            <a href="#" data-open="detail:sangkalan" style={{ display: "inline" }}>
               Pernyataan sangkalan
             </a>{" "}
             ·{" "}
-            <a
-              href="#"
-              data-open="detail:aksesibilitas"
-              style={{ display: "inline" }}
-            >
+            <a href="#" data-open="detail:aksesibilitas" style={{ display: "inline" }}>
               Aksesibilitas
             </a>{" "}
             ·{" "}
-            <a
-              href="#"
-              data-open="ext:arsip-lama"
-              style={{ display: "inline" }}
-            >
+            <a href="#" data-open="ext:arsip-lama" style={{ display: "inline" }}>
               Arsip situs lama
             </a>
           </span>

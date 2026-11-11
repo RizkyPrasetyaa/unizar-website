@@ -57,13 +57,7 @@ function NavButton({ k, label, en }: { k: MegaKey; label: string; en: string }) 
   );
 }
 
-function MegaShell({
-  menuKey,
-  children,
-}: {
-  menuKey: MegaKey;
-  children: React.ReactNode;
-}) {
+function MegaShell({ menuKey, children }: { menuKey: MegaKey; children: React.ReactNode }) {
   const { openMenu } = useMegaMenu();
   const isOn = openMenu === menuKey;
   return (
@@ -98,11 +92,7 @@ export function SiteHeader() {
             <NavButton key={n.key} k={n.key} label={n.label} en={n.en} />
           ))}
         </nav>
-        <a
-          className="seal"
-          href="/beranda"
-          aria-label="Beranda Universitas Islam Al-Azhar"
-        >
+        <a className="seal" href="/beranda" aria-label="Beranda Universitas Islam Al-Azhar">
           <img src="/unizar/logo144.png" alt="Logo Universitas Islam Al-Azhar" />
           <span>UNIZAR</span>
         </a>
@@ -114,12 +104,7 @@ export function SiteHeader() {
       </div>
 
       <div className="hdr-m">
-        <button
-          className="icon-btn"
-          type="button"
-          aria-label="Buka menu"
-          onClick={() => drawer.open()}
-        >
+        <button className="icon-btn" type="button" aria-label="Buka menu" onClick={() => drawer.open()}>
           <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h10" />
           </svg>
@@ -128,12 +113,7 @@ export function SiteHeader() {
           <img src="/unizar/logo144.png" alt="" />
           UNIZAR
         </a>
-        <button
-          className="icon-btn"
-          type="button"
-          aria-label="Cari"
-          onClick={() => search.open()}
-        >
+        <button className="icon-btn" type="button" aria-label="Cari" onClick={() => search.open()}>
           <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="11" cy="11" r="7" />
             <path d="M20 20l-3.5-3.5" />
@@ -308,9 +288,7 @@ export function SiteHeader() {
             </a>
             <a href="/pusdatin">
               <b>
-                <span data-en="Data & Information Centre">
-                  Pusat Data &amp; Informasi (Pusdatin)
-                </span>
+                <span data-en="Data & Information Centre">Pusat Data &amp; Informasi (Pusdatin)</span>
               </b>
               <small>Dokumen resmi, data, statistik, dan JDIH</small>
             </a>
@@ -360,9 +338,7 @@ export function SiteHeader() {
             </a>
             <a href="/tata-kelola" data-sec="integritas">
               <b>
-                <span data-en="Integrity & Safe Campus">
-                  Integritas &amp; Kampus Aman
-                </span>
+                <span data-en="Integrity & Safe Campus">Integritas &amp; Kampus Aman</span>
               </b>
               <small>Kode etik, Satgas PPKPT, pelaporan</small>
             </a>
@@ -412,17 +388,13 @@ export function SiteHeader() {
           <div className="mega-links">
             <a href="/pendidikan" data-sec="penerimaan">
               <b>
-                <span data-en="Admissions & Scholarships">
-                  Penerimaan &amp; Beasiswa
-                </span>
+                <span data-en="Admissions & Scholarships">Penerimaan &amp; Beasiswa</span>
               </b>
               <small>Jalur masuk, biaya, dan beasiswa</small>
             </a>
             <a href="/pendidikan" data-sec="kurikulum">
               <b>
-                <span data-en="Curriculum & Learning">
-                  Kurikulum &amp; Pembelajaran
-                </span>
+                <span data-en="Curriculum & Learning">Kurikulum &amp; Pembelajaran</span>
               </b>
               <small>OBE, MBKM, RPL, dan e-learning</small>
             </a>
@@ -478,9 +450,7 @@ export function SiteHeader() {
             </a>
             <a href="/publikasi-inovasi">
               <b>
-                <span data-en="Publications & Innovation">
-                  Publikasi &amp; Inovasi
-                </span>
+                <span data-en="Publications & Innovation">Publikasi &amp; Inovasi</span>
               </b>
               <small>Jurnal, repositori, SINTA, HKI, hilirisasi</small>
             </a>
@@ -524,17 +494,13 @@ export function SiteHeader() {
           <div className="mega-links">
             <a href="/pengabdian" data-sec="program">
               <b>
-                <span data-en="Programmes & Partner Villages">
-                  Program &amp; Desa Binaan
-                </span>
+                <span data-en="Programmes & Partner Villages">Program &amp; Desa Binaan</span>
               </b>
               <small>Program unggulan dan lokasinya</small>
             </a>
             <a href="/pengabdian" data-sec="kepakaran">
               <b>
-                <span data-en="Expertise & Collaboration">
-                  Kepakaran &amp; Kolaborasi
-                </span>
+                <span data-en="Expertise & Collaboration">Kepakaran &amp; Kolaborasi</span>
               </b>
               <small>Ajukan kerja sama dengan pakar</small>
             </a>
@@ -578,9 +544,7 @@ export function SiteHeader() {
           <div className="mega-links">
             <a href="/penjaminan-mutu" data-sec="tentang">
               <b>
-                <span data-en="About & Quality Calendar">
-                  Tentang &amp; Kalender Mutu
-                </span>
+                <span data-en="About & Quality Calendar">Tentang &amp; Kalender Mutu</span>
               </b>
               <small>Siklus PPEPP sepanjang tahun</small>
             </a>
@@ -598,9 +562,7 @@ export function SiteHeader() {
             </a>
             <a href="/peta-bukti">
               <b>
-                <span data-en="Accreditation Evidence Map">
-                  Peta Bukti BAN-PT
-                </span>
+                <span data-en="Accreditation Evidence Map">Peta Bukti BAN-PT</span>
               </b>
               <small>39 indikator IAPT 4.1</small>
             </a>

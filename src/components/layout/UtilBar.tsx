@@ -25,19 +25,10 @@ export function UtilBar() {
           <a className="hide-s" href="/pusdatin" data-sec="jdih">
             JDIH
           </a>
-          <a
-            className="hide-s"
-            href="/direktori"
-            data-sec="kontak"
-            data-en="Contact"
-          >
+          <a className="hide-s" href="/direktori" data-sec="kontak" data-en="Contact">
             Kontak
           </a>
-          <button
-            className="util-search"
-            type="button"
-            onClick={() => search.open()}
-          >
+          <button className="util-search" type="button" onClick={() => search.open()}>
             <svg className="i" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="11" cy="11" r="7" />
               <path d="M20 20l-3.5-3.5" />
