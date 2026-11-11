@@ -1,0 +1,67 @@
+---
+description: Aturan utama project Website UNIZAR — Next.js 16 + TypeScript + Tailwind v4
+alwaysApply: true
+---
+
+# Project: Website UNIZAR (Universitas Islam Al-Azhar)
+
+## Stack (JANGAN DIUBAH)
+
+- **Framework**: Next.js 16 dengan App Router (WAJIB, bukan Pages Router)
+- **Language**: TypeScript 5 (strict)
+- **Styling**: Tailwind CSS v4 + CSS orisinal di `src/styles/unizar.css`
+- **UI Components**: shadcn/ui (folder `src/components/ui/`) + Lucide icons
+- **Package manager**: bun
+
+## Aturan desain (KRITIS)
+
+1. `src/styles/unizar.css` adalah CSS asli dari mockup v9 — **dipertahankan verbatim**.
+   Ini jaminan pixel-perfect. Jangan rombak isinya.
+2. Untuk styling baru, gunakan Tailwind utility classes di JSX, bukan edit CSS global.
+3. Warna brand: emerald (`--em-900: #053B2C`), gold (`--gold: #F2C230`),
+   paper (`--paper: #F7FAF8`). Jangan ganti palet.
+4. Font: Plus Jakarta Sans + Amiri (sudah via `next/font/google` di `layout.tsx`).
+
+## Struktur folder per-menu (WAJIB IKUT)
+
+Setiap menu punya 2 tempat:
+
+1. **Route**: `src/app/<menu>/page.tsx` — satu file kecil yang cuma import
+   dan render komponen page. Jangan tulis konten di sini.
+2. **Section folder**: `src/components/sections/<menu>/` — semua konten halaman:
+   - `PageShell.tsx` — wrapper halaman (hero + subnav + placeholder sections)
+   - `<Nama>Section.tsx` — satu file per sub-section (mis. `SejarahSection.tsx`)
+   - `index.tsx` — entry komponen page
+
+Saat menambah halaman baru: buat folder baru di KEDUA tempat tersebut.
+Saat menambah section baru dalam menu yang ada: buat file `<Nama>Section.tsx`
+di folder section, lalu import & render di `index.tsx`.
+
+## Workflow git per-menu
+
+- Branch per pekerjaan: `edit-<menu>` atau `feat-<menu>-<topik>` (mis. `edit-profil-sejarah`)
+- Edit hanya di dalam folder menu yang bersangkutan agar PR bersih tanpa conflict
+- Layout global (header/footer/drawer/search) ada di `src/components/layout/`
+
+## Konvensi kode
+
+- `"use client"` di atas file yang pakai hooks/state/browser API
+- Server component by default; hanya jadikan client component kalau perlu
+- Nama komponen: PascalCase. File section selalu berakhiran `Section.tsx`
+- Type annotations wajib di props/state (TypeScript strict)
+- Jangan pakai `any` kecuali terpaksa; kalau perlu, kasih komentar kenapa
+
+## Data
+
+- JSON mockup di `src/data/` (`search_index.json`, `flow_data.json`,
+  `kin_data.json`, `akr_data.json`) — dipakai frontend sekarang,
+  nanti dipindah ke database pas backend
+- Belum ada backend/API routes. Kalau perlu data dinamis, siapkan interface
+  types dulu di `src/types/` supaya gampang di-hook-up nanti
+
+## Yang sengaja belum diimplement (frontend only)
+
+- Login/session flows (flows.js) — form mockup ada, logic backend belum
+- Kinerja portal dynamic tables (kinerja.js) — shell + HTML ada,
+  data di `src/data/kin_data.json`
+- Excel export, SSO, role simulation
