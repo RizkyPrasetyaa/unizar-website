@@ -99,13 +99,13 @@ export function UnizarProviders({ children }: { children: React.ReactNode }) {
     try {
       const stored = localStorage.getItem("unizar-lang");
       if (stored === "en" || stored === "id" && stored !== lang) {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
+         
         setLangState(stored as Lang);
       }
     } catch {
       // ignore
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, []);
 
   // Apply language: swap textContent of [data-en] elements
