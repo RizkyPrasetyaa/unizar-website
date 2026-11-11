@@ -1,0 +1,9 @@
+// Section: pendidikan--kurikulum
+// Originally from 'p-pendidikan' page. Edit this file to change this section.
+export function KurikulumSection() {
+  return (
+    <section className="sec" id="pendidikan--kurikulum" data-t="Kurikulum & Pembelajaran"><div className="wrap">
+<div className="sec-h"><div><span className="eyebrow">Pembelajaran</span><h2>Kurikulum & pembelajaran</h2></div></div>
+<div className="grid g3"><a className="card" href="#" data-open="doc:pedoman-obe"><span className="pill">Kebijakan</span><h3>Kurikulum berbasis luaran (OBE)</h3><p>Disusun bersama pengguna lulusan dan dievaluasi berkala.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="doc:pedoman-mbkm"><span className="pill">MBKM</span><h3>Merdeka Belajar (MBKM)</h3><p>Minimal 10 sks di luar prodi: magang, proyek desa, riset, atau pertukaran.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="ext:sierra"><span className="pill">RPL</span><h3>Rekognisi Pembelajaran Lampau</h3><p>Pengalaman kerja dan pelatihan diakui sebagai sks.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="ext:elearning"><span className="pill">Layanan</span><h3>E-learning</h3><p>Kelas daring, bahan ajar, dan forum diskusi untuk semua mata kuliah.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="doc:pedoman-antikorupsi"><span className="pill">Integritas</span><h3>Pendidikan antikorupsi</h3><p>Nilai integritas terintegrasi di setiap kurikulum prodi.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#penjaminan-mutu" data-sec="dokumen"><span className="pill">Mutu</span><h3>Evaluasi pembelajaran</h3><p>Hasil evaluasi dosen oleh mahasiswa dan tindak lanjutnya.</p><span className="more">Selengkapnya →</span></a></div></div></section>
+  );
+}

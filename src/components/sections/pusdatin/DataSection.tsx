@@ -1,0 +1,9 @@
+// Section: pusdatin--data
+// Originally from 'p-pusdatin' page. Edit this file to change this section.
+export function DataSection() {
+  return (
+    <section className="sec" id="pusdatin--data" data-t="Data & statistik"><div className="wrap">
+<div className="sec-h"><div><span className="eyebrow">Data</span><h2>Data & statistik universitas</h2><p>Data utama yang sering diminta, diperbarui dari PD Dikti dan sistem internal. Setiap tabel dapat diunduh.</p></div></div>
+<div className="grid g3"><a className="card" href="#profil" data-sec="angka"><span className="pill">Ringkasan</span><h3>UNIZAR dalam Angka</h3><p>Ringkasan fakta universitas yang selalu mutakhir.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="doc:data-mhs"><span className="pill">Tabel</span><h3>Mahasiswa per prodi</h3><p>Jumlah mahasiswa aktif, baru, dan lulusan per tahun akademik.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="doc:data-dosen"><span className="pill">Tabel</span><h3>Dosen & tenaga kependidikan</h3><p>Jumlah, kualifikasi, dan jabatan akademik per prodi.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#penjaminan-mutu" data-sec="akreditasi"><span className="pill">Akreditasi</span><h3>Akreditasi</h3><p>Status akreditasi terkini dan arsip sertifikat.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="doc:data-riset"><span className="pill">Tabel</span><h3>Penelitian & pengabdian</h3><p>Judul, pendanaan, dan luaran per tahun.</p><span className="more">Selengkapnya →</span></a><a className="card" href="#" data-open="form:permintaan-data"><span className="pill">Layanan</span><h3>Permintaan data</h3><p>Ajukan permintaan data untuk riset atau keperluan resmi.</p><span className="more">Selengkapnya →</span></a></div></div></section>
+  );
+}
